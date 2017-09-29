@@ -1,0 +1,64 @@
+/*
+#5-0
+Kimberly Larson
+9/29/2018
+5th Period
+Bank Account Program
+*/
+package bankaccount;
+ 
+import java.util.*;
+ 
+/**
+*
+* @author klarson
+*/
+public class BankAccount {
+    private static Object handler;
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        // setting variables
+        double balance = 250;
+        Date date = new Date();
+       
+        Scanner io;
+        io = new Scanner(System.in);
+        
+        // blinking cursor
+        handler.post(new Runnable);
+        
+        // welcome message
+        System.out.println(" _$$      _$$           _$$");                                            
+        System.out.println("| $$  /$ | $$          | $$");                                       
+        System.out.println("| $$ /$$$| $$  /$$$$$$ | $$  /$$$$$$$  /$$$$$$  /$$$$$$/$$$$   /$$$$$$ ");
+        System.out.println("| $$/$$ $$ $$ /$$__  $$| $$ /$$_____/ /$$__  $$| $$_  $$_  $$ /$$__  $$");
+        System.out.println("| $$$$_  $$$$| $$$$$$$$| $$| $$      | $$  _ $$| $$ _ $$ _ $$| $$$$$$$$");
+        System.out.println("| $$$/ _  $$$| $$_____/| $$| $$      | $$  | $$| $$ | $$ | $$| $$_____/");
+        System.out.println("| $$/   -  $$|  $$$$$$$| $$|  $$$$$$$|  $$$$$$/| $$ | $$ | $$|  $$$$$$$");
+        System.out.println("|__/     ___/ ________/|__/ ________/ _______/ |__/ |__/ |__/ ________/");
+        System.out.println("");
+        System.out.println("________________________________________________________________________");
+        System.out.println("");
+
+        System.out.print("Username ⟺ ");
+        String username = io.nextLine();
+        System.out.println("");
+        System.out.print("Password ⟺ ");
+        String password = io.nextLine();
+        System.out.println("");
+        if (username.equals("Larson") && password.equals("1234"))
+            System.out.println("Welcome, " + username + "! How can I help you today?");
+           
+        
+        else
+            System.out.println("Incorrect Username or Password. Please try again.");
+    }
+
+    private static void runOnUiThread(Runnable runnable) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+}
